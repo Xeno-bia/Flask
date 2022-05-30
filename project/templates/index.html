@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang = "ja">
+    <head>
+        <meta charset = "UTF-8">
+
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+        <title>ページタイトル</title>
+
+        <link rel = "stylesheet" href = "static/style.css">
+    </head>
+
+    <body>
+        <h1></h1>
+
+        <h2></h2>
+
+        <h3></h3>
+
+        <h4></h4>
+
+        <h5></h5>
+
+        <h6></h6>
+
+        <p></p>
+
+        <a href = "URL"></a>
+
+        <p>{{変数}}</p>
+
+        {% if 条件 %}
+            処理
+        {% elif 条件 %}
+            処理
+        {% else %}
+            処理
+        {% endif %}
+
+        <ul>
+            {% for 変数 in リスト %}
+                <li>{{変数}}</li>
+            {% endfor %}
+        </ul>
+
+        <ol>
+            {% for 変数 in リスト %}
+                <li>{{変数}}</li>
+            {% endfor %}
+        </ol>
+    </body>
+</html>
