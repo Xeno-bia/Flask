@@ -1,52 +1,38 @@
+{# {% extends layout.html %} #}
+
 <!DOCTYPE html>
 
-<html lang = "ja">
+<html lang="ja">
     <head>
-        <meta charset = "UTF-8">
+        <meta charset="UTF-8">
 
-        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>ページタイトル</title>
+        <title>ホーム</title>
 
-        <link rel = "stylesheet" href = "static/style.css">
+        <link rel="stylesheet" href="static/style.css">
     </head>
 
     <body>
-        <h1></h1>
+        <h1>見出し(1-6)</h1>
 
-        <h2></h2>
+        <p>段落</p>
 
-        <h3></h3>
+        <a href="http://127.0.0.1:5000">リンク</a>
 
-        <h4></h4>
-
-        <h5></h5>
-
-        <h6></h6>
-
-        <p></p>
-
-        <a href = "URL"></a>
-
-        <p>{{変数}}</p>
-
-        {% if 条件 %}
-            処理
-        {% elif 条件 %}
-            処理
-        {% else %}
-            処理
+        {% if 1 in [1, 2, 3] %}
+            <p>分岐(if, elif, else)</p>
         {% endif %}
 
         <ul>
-            {% for 変数 in リスト %}
-                <li>{{変数}}</li>
+            {% for i in range(3) %}
+                <li>forループ</li>
             {% endfor %}
         </ul>
 
         <ol>
-            {% for 変数 in リスト %}
-                <li>{{変数}}</li>
+            {% for i in range(3) %}
+                <li>forループ</li>
             {% endfor %}
         </ol>
     </body>
